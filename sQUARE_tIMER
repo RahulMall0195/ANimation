@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .element {
+        height: 200px;
+        width: 200px;
+        background-color: #1c87c9;
+        animation: pulse 5s ease infinite alternate, nudge 5s linear infinite alternate;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          background-color: #8ebf42;
+        }
+        50% {
+          background-color: #1c87c9;
+        }
+      }
+      @keyframes nudge {
+        0%,
+        100% {
+          transform: translate(0, 0);
+        }
+        50% {
+          transform: translate(150px, 0);
+        }
+        80% {
+          transform: translate(-150px, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="element"></div>
+  </body>
+</html>
