@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 120px;
+        height: 120px;
+        background: #ccc;
+        position: relative;
+        animation: myfirst 5s 1;
+        animation-direction: normal;
+      }
+      @keyframes myfirst {
+        0% {
+          background: #8DC3CF;
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+          background: #1c87c9;
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          background: #030E10;
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+          background: #666;
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          background: #8ebf42;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Animation-direction example</h2>
+    <p>Here the animation plays backwards.</p>
+    <div></div>
+  </body>
+</html>
