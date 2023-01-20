@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        margin: 30px 0;
+        border-radius: 50%;
+        animation-name: pulse;
+      }
+      .element-one {
+        background-color: #1c87c9;
+        animation-duration: 3s;
+        animation-iteration-count: 3;
+      }
+      .element-two {
+        margin: 0;
+        background-color: #83bf42;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+      }
+      @keyframes pulse {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: 50%;
+        }
+        100% {
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The animation-iteration-count example</h2>
+    <p>The animation-iteration-count sets the number of times an animation cycle should be played before stopping.</p>
+    <div class="element-one"></div>
+    <div class="element-two"></div>
+  </body>
+</html>
