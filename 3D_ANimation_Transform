@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      div {
+        margin: 35px 20px;
+      }
+      div.box1 {
+        width: 130px;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #1c87c9;
+        -ms-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+      }
+      div.box2 {
+        width: 120px;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #8ebf42;
+        -ms-transform: skewY(30deg);
+        -webkit-transform: skewY(30deg);
+        transform: skewY(30deg);
+      }
+      div.box3 {
+        width: 160px;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #FFFF00;
+        -ms-transform: scaleY(1);
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+      }
+      div.box4 {
+        width: 160px;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #ccc;
+        -ms-transform: rotate(160deg);
+        -webkit-transform: rotate(160deg);
+        transform: rotate(160deg);
+      }
+      div.box5 {
+        width: 160px;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #990099;
+        -ms-transform: translateX(50px);
+        -webkit-transform: translate(50px);
+        transform: translateX(50px);
+      }
+      div.box6 {
+        width: 160px;
+        height: 80px;
+        border: 1px solid #000;
+        background-color: #FF0000;
+        -ms-transform: skew(170deg, 170deg);
+        -webkit-transform: skew(170deg, 170deg);
+        transform: skew(170deg, 170deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Transform property example</h2>
+    <h3>transform: rotate(30deg):</h3>
+    <div class="box1"></div>
+    <h3>transform: skewY(30deg):</h3>
+    <div class="box2"></div>
+    <h3>transform: scaleY(1):</h3>
+    <div class="box3"></div>
+    <h3>transform: transform:rotate(160deg):</h3>
+    <div class="box4"></div>
+    <h3>transform: translateX(50px):</h3>
+    <div class="box5"></div>
+    <h3>transform: skew(170deg,170deg):</h3>
+    <div class="box6"></div>
+  </body>
+</html>
